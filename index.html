@@ -1,111 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZEHER STORE</title>
-
 <style>
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#0d0d0d;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
 color:#fff;
+overflow-x:hidden;
 }
 
 header{
-background:#000;
-color:#00ff66;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(15px);
+z-index:1000;
+border-bottom:1px solid rgba(0,255,120,.2);
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#00ff88;
+text-decoration:none;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00ff88;
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-padding:20px;
-font-size:34px;
-font-weight:bold;
+
+padding:120px 20px;
+
+background:
+radial-gradient(circle at top,#00ff8830,transparent 60%),
+#050505;
+
 }
 
-.container{
-width:90%;
-max-width:900px;
-margin:auto;
-padding:20px;
-}
+.hero h1{
 
-.card{
-background:#1a1a1a;
-padding:25px;
-border-radius:15px;
+font-size:60px;
+
+line-height:1.2;
+
 margin-bottom:20px;
+
 }
 
-h2{
-color:#00ff66;
+.hero h1 span{
+
+color:#00ff88;
+
+}
+
+.hero p{
+
+max-width:650px;
+
+margin:auto;
+
+font-size:18px;
+
+color:#cfcfcf;
+
+line-height:1.8;
+
+}
+
+.buttons{
+
+margin-top:40px;
+
+display:flex;
+
+gap:20px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
 }
 
 .btn{
-display:inline-block;
-padding:14px 28px;
-background:#00c853;
-color:#fff;
+
+padding:16px 38px;
+
+border-radius:50px;
+
 text-decoration:none;
-border-radius:10px;
-font-size:18px;
-font-weight:bold;
-margin-top:15px;
+
+font-weight:700;
+
+transition:.3s;
+
 }
 
-.btn:hover{
-background:#00a844;
+.primary{
+
+background:#00ff88;
+
+color:#000;
+
 }
 
-.contact{
-margin-top:20px;
-font-size:17px;
-line-height:1.8;
+.primary:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 25px #00ff88;
+
 }
 
-footer{
-text-align:center;
-padding:20px;
-color:#aaa;
+.secondary{
+
+border:2px solid #00ff88;
+
+color:#00ff88;
+
+}
+
+.secondary:hover{
+
+background:#00ff88;
+
+color:#000;
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
 }
 </style>
-</head>
 
-<body>
+<header>
 
-<header>ZEHER STORE</header>
+<a class="logo">ZEHER STORE</a>
 
-<div class="container">
+<nav>
 
-<div class="card">
-<h2>Welcome</h2>
-<p>Premium PUBG Accounts & Digital Products Available.</p>
-</div>
+<a href="#">Home</a>
 
-<div class="card">
-<h2>Products</h2>
+<a href="#">Collection</a>
 
-<ul>
-<li>Premium PUBG Accounts</li>
-<li>Gaming Accounts</li>
-<li>Digital Services</li>
-</ul>
+<a href="#">Proofs</a>
 
-<a class="btn" href="https://wa.me/918269918909?text=Hello%20I%20want%20to%20buy%20a%20PUBG%20account">
-Contact on WhatsApp
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>
+
+Level Up Your <span>Gaming Identity</span>
+
+</h1>
+
+<p>
+
+Premium PUBG Mobile Accounts with Rare Skins, Mythics, Glacier Weapons and Instant Delivery.
+
+</p>
+
+<div class="buttons">
+
+<a href="#" class="btn primary">
+
+Browse Collection
+
 </a>
 
-<div class="contact">
-<p>📱 WhatsApp: +91 82699 18909</p>
-<p>📧 Gmail: opzeher911@gmail.com</p>
-</div>
+<a href="https://wa.me/918269918909"
+
+class="btn secondary">
+
+WhatsApp
+
+</a>
 
 </div>
 
 </div>
 
-<footer>
-© 2026 ZEHER STORE. All Rights Reserved.
-</footer>
+</section>
+<section style="padding:80px 20px;background:#0b0b0b;">
+<h2 style="text-align:center;color:#00ff88;font-size:40px;margin-bottom:40px;">
+Premium PUBG Accounts
+</h2>
 
-</body>
-</html>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;max-width:1200px;margin:auto;">
+
+<div style="background:#151515;padding:25px;border-radius:20px;border:1px solid #00ff88;">
+<h3>S5 Glacier Account</h3>
+<p>Level 78</p>
+<p>✔ Glacier M416</p>
+<p>✔ 70 Mythics</p>
+<p>✔ Rare Lobby</p>
+<h2 style="color:#00ff88;">$149</h2>
+<a href="https://wa.me/918269918909" style="display:inline-block;margin-top:15px;background:#00ff88;color:#000;padding:12px 25px;border-radius:10px;text-decoration:none;font-weight:bold;">
+Buy Now
+</a>
+</div>
+
+<div style="background:#151515;padding:25px;border-radius:20px;border:1px solid #00ff88;">
+<h3>Ultimate Conqueror ID</h3>
+<p>Level 85</p>
+<p>✔ Glacier AKM</p>
+<p>✔ X-Suit</p>
+<p>✔ Maxed Skins</p>
+<h2 style="color:#00ff88;">$249</h2>
+<a href="https://wa.me/918269918909" style="display:inline-block;margin-top:15px;background:#00ff88;color:#000;padding:12px 25px;border-radius:10px;text-decoration:none;font-weight:bold;">
+Buy Now
+</a>
+</div>
+
+</div>
+</section>
